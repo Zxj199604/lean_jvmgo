@@ -4,9 +4,9 @@ import "os"
 import "path/filepath"
 
 type Classpath struct {
-	bootClasspath Entry  //启动类路径
-	extClasspath  Entry  //扩展类路径
-	userClasspath Entry  //用户类路径
+	bootClasspath Entry //启动类路径
+	extClasspath  Entry //扩展类路径
+	userClasspath Entry //用户类路径
 }
 
 func Parse(jreOption, cpOption string) *Classpath {
